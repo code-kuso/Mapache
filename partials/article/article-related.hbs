@@ -1,5 +1,5 @@
 {{!-- Article related --}}
-{{#get "posts" limit="6" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags" as |post_related|}}
+{{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags" as |post_related|}}
 {{#if post_related}}
 
 <section class="post-related u-overflowHidden">
